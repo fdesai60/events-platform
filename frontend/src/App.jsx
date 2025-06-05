@@ -1,13 +1,14 @@
 import './App.css'
-import axios from 'axios'
-import { useEffect } from 'react';
 
 function App() {
-  
+  const handleLogin = () => {
+    window.location.href = 'http://localhost:3000/auth/google';
+  };
 
   return (
     <div>
-
+      <h1>EVENTS PLATFORM</h1>
+      <button onClick={handleLogin}>Login with Google</button>
     </div>
   )
 }

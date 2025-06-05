@@ -1,9 +1,9 @@
 const db = require("../../db-setup/connection");
 
-const googleIdToDelete = "google-oauth-id-13";
+const googleIdToDelete = "googl";
 
 //test db query
-db.query(`DELETE FROM users WHERE google_id = $1 RETURNING *`, [googleIdToDelete])
+db.query(`DELETE FROM usRETURNING *`, [gooDelete])
   .then(result => {
     if (result.rows.length > 0) {
       console.log("Deleted user:", result.rows[0]);
